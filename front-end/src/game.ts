@@ -1,5 +1,7 @@
 interface GameState {
   cells: Cell[];
+  currentPlayer: string;
+  winner: string;
 }
 
 interface Cell {
@@ -9,4 +11,4 @@ interface Cell {
   y: number;
 }
 
-export type { GameState, Cell }
+export type { GameState, Cell };

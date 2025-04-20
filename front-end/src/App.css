@@ -1,47 +1,64 @@
 #board {
   display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #4CAF50;
+  padding: 25px;
+  gap: 10px;
 }
 
 .cell {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #ffffff;
+  border: 2px solid #333;
   padding: 20px;
-  font-size: 30px;
-  height: 25vmin;
+  font-size: 5vmin;
+  height: 20vmin;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #e0e0e0;
+}
+
+.playable {
+  background-color: #f8bbd0 !important;
+}
+
+#winner {
+  color: red;
+  font-weight: bold;
 }
 
 #bottombar {
   height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 #instructions {
   height: 5vh;
-  background-color: white;
-  padding: 0px;
-  margin: 0px;
+  background-color: #fff;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 #bottombar button {
-  width: 50%;
-  /* height: 100%; */
-  margin: 0;
-  padding: 0;
-  position: relative;
-  float: left;
-  font-size: 2vw
+  padding: 10px 20px;
+  font-size: 1.2vw;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
-
-.playable { background-color: red;}
