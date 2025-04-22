@@ -87,7 +87,7 @@ class App extends React.Component<Props, GameState & { history: GameState[] }> {
     return (
       <div>
         <div id="instructions">
-          {this.state.winner
+          {this.state.winner  
             ? `Winner: ${this.state.winner}`
             : `Current Player: ${this.state.currentPlayer}`}
         </div>
